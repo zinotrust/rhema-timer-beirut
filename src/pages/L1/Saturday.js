@@ -48,7 +48,7 @@ const Saturday = () => {
         warn.play();
         toast.success("Warning Bell");
         break;
-      case "12:30:00 PM":
+      case "1:30:00 PM":
         final.play();
         toast.success("Final Bell");
         break;
