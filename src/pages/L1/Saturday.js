@@ -13,124 +13,83 @@ const Saturday = () => {
     let final = new Audio("/final.mp3");
 
     switch (time) {
-      // Start
-      case "8:00:00 AM":
+      // Start session 3
+      case "9:15:00 AM":
         warn.play();
-        toast.success("Prayer session");
+        toast.success("Start Session");
         break;
-      // End of Prayer session
-      case "8:20:00 AM":
+      case "10:20:00 AM":
+        warn.play();
+        toast.success("Warning Bell");
+        break;
+      case "10:30:00 AM":
+        final.play();
+        toast.success("Final Bell");
+        break;
+      // session 4
+      case "10:45:00 AM":
+        warn.play();
+        toast.success("Break Over, Start Session");
+        break;
+      case "11:50:00 AM":
+        warn.play();
+        toast.success("Warning Bell");
+        break;
+      case "12:00:00 PM":
         final.play();
         toast.success("Final Bell");
         break;
       // session 5
-      case "8:30:00 AM":
+      case "12:15:00 PM":
         warn.play();
         toast.success("Break Over, Start Session");
         break;
-      case "9:10:00 AM":
+      case "1:20:00 PM":
         warn.play();
         toast.success("Warning Bell");
         break;
-      case "9:20:00 AM":
+      case "12:30:00 PM":
         final.play();
         toast.success("Final Bell");
         break;
       // session 6
-      case "9:30:00 AM":
-        warn.play();
-        toast.success("Break Over, Start Session");
-        break;
-      case "10:10:00 AM":
-        warn.play();
-        toast.success("Warning Bell");
-        break;
-      case "10:20:00 AM":
-        final.play();
-        toast.success("Final Bell");
-        break;
-      // session 7
-      case "10:40:00 AM":
-        warn.play();
-        toast.success("Break Over, Start Session");
-        break;
-      case "11:10:00 AM":
-        warn.play();
-        toast.success("Warning Bell");
-        break;
-      case "11:20:00 AM":
-        final.play();
-        toast.success("Final Bell");
-        break;
-      // session 8
-      case "11:30:00 AM":
-        warn.play();
-        toast.success("Break Over, Start Session");
-        break;
-      case "12:10:00 PM":
-        warn.play();
-        toast.success("Warning Bell");
-        break;
-      case "12:20:00 PM":
-        final.play();
-        toast.success("Final Bell");
-        break;
-      // session 9
-      case "1:30:00 PM":
-        warn.play();
-        toast.success("Break Over, Start Session");
-        break;
-      case "2:10:00 PM":
-        warn.play();
-        toast.success("Warning Bell");
-        break;
-      case "2:20:00 PM":
-        final.play();
-        toast.success("Final Bell");
-        break;
-      // session 10
       case "2:30:00 PM":
         warn.play();
         toast.success("Break Over, Start Session");
         break;
-      case "3:10:00 PM":
+      case "3:35:00 PM":
         warn.play();
         toast.success("Warning Bell");
         break;
-      case "3:20:00 PM":
+      case "3:45:00 PM":
         final.play();
         toast.success("Final Bell");
         break;
-      // session 11
-      case "3:40:00 PM":
+      // session 7
+      case "4:00:00 PM":
         warn.play();
         toast.success("Break Over, Start Session");
         break;
-      case "4:10:00 PM":
+      case "5:05:00 PM":
         warn.play();
         toast.success("Warning Bell");
         break;
-      case "4:20:00 PM":
+      case "5:15:00 PM":
         final.play();
         toast.success("Final Bell");
         break;
-      // session 12
-      case "4:30:00 PM":
-        warn.play();
-        toast.success("Break Over, Start Session");
-        break;
-      case "5:10:00 PM":
-        warn.play();
-        toast.success("Warning Bell");
-        break;
-      case "5:20:00 PM":
-        final.play();
-        toast.success("Final Bell");
-        break;
-      // Close meeting
+      // session 8
       case "5:30:00 PM":
+        warn.play();
+        toast.success("Break Over, Start Session");
+        break;
+      case "6:35:00 PM":
+        warn.play();
+        toast.success("Warning Bell");
+        break;
+      case "6:45:00 PM":
         final.play();
-        toast.success("Close Meeting");
+        toast.success("Final Bell");
         break;
 
       // Default
@@ -141,10 +100,15 @@ const Saturday = () => {
 
   return (
     <div className="--mt">
-      <Heading text={"Level 1 - Weekend Class"} />
+      <h4 className="--my">
+        <b>NOTE:</b>Please keep this page open.
+      </h4>
+      <p className="--my">
+        The time is synced to the local time on this computer.
+      </p>
       <div className="--flex-start --flex-dir-column">
         <Timer />
-        <DaySchedule />
+        <DaySchedule day={"Saturday"} />
       </div>
     </div>
   );

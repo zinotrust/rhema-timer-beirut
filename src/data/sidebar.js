@@ -8,37 +8,29 @@ const menu = [
     path: "/",
   },
   {
-    title: "Level 1 Night",
+    title: "Friday Class",
     icon: <BsAlarmFill />,
-    childrens: [
-      {
-        title: "Sunday",
-        path: "/sunday",
-      },
-      {
-        title: "Monday",
-        path: "/monday",
-      },
-      {
-        title: "Tuesday",
-        path: "/tuesday",
-      },
-    ],
+    path: "/friday",
   },
   {
-    title: "Level 1 Weekend",
+    title: "Saturday Class",
     icon: <BsAlarm />,
-    childrens: [
-      {
-        title: "Friday",
-        path: "/friday",
-      },
-      {
-        title: "Saturday",
-        path: "/saturday",
-      },
-    ],
+    path: "/saturday",
   },
+  // {
+  //   title: "Level 1 Weekend",
+  //   icon: <BsAlarm />,
+  //   childrens: [
+  //     {
+  //       title: "Friday",
+  //       path: "/friday",
+  //     },
+  //     {
+  //       title: "Saturday",
+  //       path: "/saturday",
+  //     },
+  //   ],
+  // },
   // {
   //   title: "Stop Watch",
   //   icon: <BsAlarm color="red" />,

@@ -14,63 +14,31 @@ const Evening = () => {
 
     switch (time) {
       // session 1
-      case "5:00:00 PM":
+      case "7:15:00 PM":
         warn.play();
         toast.success("Start Session");
         break;
-      case "5:40:00 PM":
+      case "8:20:00 PM":
         warn.play();
         toast.success("Warning Bell");
         break;
-      case "5:50:00 PM":
+      case "8:30:00 PM":
         final.play();
         toast.success("Final Bell");
         break;
       // session 2
-      case "6:00:00 PM":
+      case "8:45:00 PM":
         warn.play();
         toast.success("Start Session");
         break;
-      case "6:30:00 PM":
+      case "9:50:00 PM":
         warn.play();
         toast.success("Warning Bell");
         break;
-      case "6:40:00 PM":
+      case "10:00:00 PM":
         final.play();
         toast.success("Final Bell");
         break;
-      // session 3
-      case "7:00:00 PM":
-        warn.play();
-        toast.success("Start Session");
-        break;
-      case "7:40:00 PM":
-        warn.play();
-        toast.success("Warning Bell");
-        break;
-      case "7:50:00 PM":
-        final.play();
-        toast.success("Final Bell");
-        break;
-      // session 4
-      case "8:00:00 PM":
-        warn.play();
-        toast.success("Start Session");
-        break;
-      case "8:40:00 PM":
-        warn.play();
-        toast.success("Warning Bell");
-        break;
-      case "8:50:00 PM":
-        final.play();
-        toast.success("Final Bell");
-        break;
-      // Close meeting
-      case "9:00:00 PM":
-        final.play();
-        toast.success("Close Meeting");
-        break;
-
       // Default
       default:
         break;
@@ -78,10 +46,15 @@ const Evening = () => {
   }, [time]);
   return (
     <div className="--mt">
-      <Heading text={"Level 1 - Weekend Class"} />
+      <h4 className="--my">
+        <b>NOTE:</b>Please keep this page open.
+      </h4>
+      <p className="--my">
+        The time is synced to the local time on this computer.
+      </p>
       <div className="--flex-start --flex-dir-column">
         <Timer />
-        <NightSchedule />
+        <NightSchedule day={"Friday"} />
       </div>
     </div>
   );

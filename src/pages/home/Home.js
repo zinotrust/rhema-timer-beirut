@@ -10,14 +10,20 @@ const Home = () => {
     toast.success("Final Bell Rang");
   };
   return (
-    <div className="--flex-start --flex-dir-column --mt">
-      <Timer />
-      <div className="--mt">
-        <button className="--btn --btn-danger --btn-lg" onClick={ringBell}>
-          Ring Bell
-        </button>
+    <>
+      <h4 className="--my">
+        <b>NOTE:</b>Please keep this page open.
+      </h4>
+      <p>The time is synced to the local time on this computer.</p>
+      <div className="--flex-start --flex-dir-column --mt">
+        <Timer />
+        <div className="--mt">
+          <button className="--btn --btn-danger --btn-lg" onClick={ringBell}>
+            Ring Bell
+          </button>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
