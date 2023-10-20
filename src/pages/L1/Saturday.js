@@ -50,44 +50,49 @@ const Saturday = () => {
         break;
       case "1:30:00 PM":
         final.play();
-        toast.success("Final Bell");
+        toast.success("Final Bell, Lunch Break");
+        break;
+      // Announcement
+      case "2:10:00 PM":
+        warn.play();
+        toast.success("Break Over, Announcement");
         break;
       // session 6
-      case "2:30:00 PM":
+      case "2:15:00 PM":
         warn.play();
-        toast.success("Break Over, Start Session");
+        toast.success("Announcement Over, Start Session");
         break;
-      case "3:35:00 PM":
+      case "3:20:00 PM":
         warn.play();
         toast.success("Warning Bell");
         break;
-      case "3:45:00 PM":
+      case "3:30:00 PM":
         final.play();
         toast.success("Final Bell");
         break;
       // session 7
-      case "4:00:00 PM":
+      case "3:45:00 PM":
         warn.play();
         toast.success("Break Over, Start Session");
         break;
-      case "5:05:00 PM":
+      case "4:50:00 PM":
         warn.play();
         toast.success("Warning Bell");
         break;
-      case "5:15:00 PM":
+      case "5:00:00 PM":
         final.play();
         toast.success("Final Bell");
         break;
       // session 8
-      case "5:30:00 PM":
+      case "5:15:00 PM":
         warn.play();
         toast.success("Break Over, Start Session");
         break;
-      case "6:35:00 PM":
+      case "6:20:00 PM":
         warn.play();
         toast.success("Warning Bell");
         break;
-      case "6:45:00 PM":
+      case "6:30:00 PM":
         final.play();
         toast.success("Final Bell");
         break;

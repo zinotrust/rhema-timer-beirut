@@ -18,16 +18,16 @@ const Evening = () => {
         warn.play();
         toast.success("Start Session");
         break;
-      case "8:20:00 PM":
+      case "8:35:00 PM":
         warn.play();
         toast.success("Warning Bell");
         break;
-      case "8:30:00 PM":
+      case "8:45:00 PM":
         final.play();
         toast.success("Final Bell");
         break;
       // session 2
-      case "8:45:00 PM":
+      case "9:00:00 PM":
         warn.play();
         toast.success("Start Session");
         break;
@@ -50,7 +50,7 @@ const Evening = () => {
         <b>NOTE:</b>Please keep this page open.
       </h4>
       <p className="--my">
-        The time is synced to the local time on this computer.
+        The time is synced to the local time on this computer..
       </p>
       <div className="--flex-start --flex-dir-column">
         <Timer />

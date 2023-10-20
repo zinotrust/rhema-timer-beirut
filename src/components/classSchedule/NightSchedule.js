@@ -1,17 +1,18 @@
 import React from "react";
 import TimeTable from "./TimeTable";
 
+// Friday Evening Beruit
 const nightSchedule = [
   {
-    time: "7.15 - 8.30pm",
+    time: "7.15 - 8.45pm",
     event: "Session 1",
   },
   {
-    time: "8.30 - 8.45pm",
+    time: "8.45 - 9.00pm",
     event: "15 Minute break",
   },
   {
-    time: "8.45 - 10.00pm",
+    time: "9.00 - 10.00pm",
     event: "Session 2",
   },
 ];

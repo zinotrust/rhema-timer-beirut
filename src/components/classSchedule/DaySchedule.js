@@ -23,27 +23,31 @@ const daySchedule = [
     event: "Session 5",
   },
   {
-    time: "01.30 - 2.30pm",
-    event: "60 Minute break",
+    time: "01.30 - 2.10pm",
+    event: "40 Minute Lunch break",
   },
   {
-    time: "2.30 - 3.45pm",
+    time: "02.10 - 2.15pm",
+    event: "Announcements",
+  },
+  {
+    time: "2.15 - 3.30pm",
     event: "Session 6",
   },
   {
-    time: "3.45 - 4.00pm",
-    event: "15 Minute break",
+    time: "3.30 - 3.45pm",
+    event: "15 Minute Break",
   },
   {
-    time: "4.00 - 5.15pm",
+    time: "3.45 - 5.00pm",
     event: "Session 7",
   },
   {
-    time: "5.15 - 5.30pm",
+    time: "5.00 - 5.15pm",
     event: "15 Minute break",
   },
   {
-    time: "5.30 - 6.45pm",
+    time: "5.15 - 6.30pm",
     event: "Session 8",
   },
 ];
